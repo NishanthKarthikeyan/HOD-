@@ -78,6 +78,21 @@
     }
     .research-list{margin-top:12px;padding-left:18px}
     .research-list li{margin-bottom:8px}
+
+    /* New caption under the HOD image */
+    .hod-caption{
+      margin-top:12px;
+      font-size:16px; /* medium font size */
+      line-height:1.35;
+      font-weight:600;
+      color:#0f1724;
+    }
+    .hod-caption .title{
+      font-weight:700;
+    }
+    .hod-caption .sub{font-weight:500;color:var(--muted);font-size:14px;margin-top:4px}
+    .hod-caption .college{font-size:13px;color:var(--muted);margin-top:2px;font-weight:500}
+
   </style>
 </head>
 <body>
@@ -95,6 +110,14 @@
         <article class="card">
           <h2 id="hod-title">A message from the Head of Department</h2>
           <img src="----------------------------------------" alt="HOD AI & DS" class="hod-img">
+
+          <!-- New: text block placed directly under the image with medium font size -->
+          <div class="hod-caption" aria-label="HOD name and title">
+            <div class="title">Dr. Senthil Kumar J, Ph.D.</div>
+            <div class="sub">Head of Department Of Artificial Intelligence & Data Science</div>
+            <div class="college">Shree Venkateshwara Hi-Tech Engineering College</div>
+          </div>
+
           <div class="dept-badge">HOD Of Artificial Intelligence And Data Science · Ph.D.</div>
 
           <p style="margin-top:14px;"><strong>Dr. Senthil Kumar J, Ph.D.</strong>, and I lead the Artificial Intelligence & Data Science department with a mission to shape students into innovative problem solvers equipped with modern AI & ML tools.</p>
@@ -156,4 +179,3 @@
   </script>
 </body>
 </html>
-
